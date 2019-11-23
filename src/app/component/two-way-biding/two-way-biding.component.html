@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+<form>
+  <div class="form-group">
+    <label> Họ Tên: {{name}} </label>
+    <input type="text" class="form-control"[(ngModel)]="name"[ngModelOptions]="{standalone: true}">
+  </div>
+  <hr/>
+  Gioi Tính: {{gender == 0 ? 'Nữ':'Nam'}}
+  <select class="form-control"[(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+    <option value="1">NAM</option>
+    <option value="0">NỮ</option>
+  </select>
+</form>
+
+

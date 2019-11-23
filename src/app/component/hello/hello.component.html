@@ -1,0 +1,44 @@
+<h3>ComponentToView</h3>
+<h1>họ tên: {{name}}</h1>
+<p> Tuổi: {{age}}</p>
+<p> Tình trạng hôn nhân : {{isMaried ? 'ĐÃ KẾT HÔN' : 'FA' }}</p>
+<!--<h2>Tên: {{showInfo()}}</h2>-->
+<img src="https://cdn.eva.vn/upload/4-2019/images/2019-11-19/8a-1574173956-248-width800height500.jpg" width="200" height="200"><br><br><br>
+<br> <br> <br>
+
+<a href="https://24h.com.vn">đọc báo</a>
+<input type="text" class="form-control" [value]="name">
+<button type = "button" class="btn btn-primary" [disabled]="isValid">button</button>
+<table class="table table-bordered" [attr.border]="2"[attr.width]="imgWidth">
+  <tr>
+    <td>ID</td>
+    <td>Họ Tên</td>
+    <td>SĐT</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>ABC</td>
+    <td>123456</td>
+  </tr>
+</table>
+<br>
+<table class="table table-bordered" [class.table-bordered]="isBorder">
+
+  <tr>
+    <td>ID</td>
+    <td>Họ Tên</td>
+    <td>SĐT</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>ABC</td>
+    <td>123456</td>
+  </tr>
+</table>
+<label class="label"[class.label-danger]="ischeck === 1"
+[class.label-success]="ischeck !== 1">Label</label>
+<div [style.background-color]="isSpecial ? 'red': 'cyan'"
+[style.font-size.px]="size">
+Lập trình Angular
+</div>
+
